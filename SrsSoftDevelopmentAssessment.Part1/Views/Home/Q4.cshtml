@@ -1,0 +1,26 @@
+﻿@model int?
+@{
+    ViewBag.Title = "Question 4";
+}
+
+<p>Find the sum of all the multiples of 3 or 5 below 1000.</p>
+<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.  The sum of these multiples is 23.</p>
+
+@using (Html.BeginForm()) {
+    @Html.Label("number", "Please enter a number between 1 and 1000");
+    @Html.TextBox("number") <input type="submit" value="Submit" />
+}
+
+@if (Model.HasValue) {
+<div class="answer">
+    @if (@Model > 0 && @Model <= 1000) {
+    <span>The sum of all the multiples of 3 or 5 below your number is: </span><strong>@Model</strong>
+    } else {
+    <span>Please provide a number between 1 and 1000.</span>
+    }
+</div>
+}
+
+<p>What is the run time for this algorithm in O() notation?</p>
+
+<p>The algorithm notation would again be <strong>O(N)</strong>, as speed of supplied processing is a single looping of numbers being summed.</p>

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Question 3";
+}
+
+<p>Given a list of space separated words, reverse the order of the words.  There will be exactly one space character between each pair of consecutive words.  For example, [hello my world] would become [world my hello].</p>
+
+@using(Html.BeginForm()) {
+    @Html.Label("sentence", "Enter a sentence to reverse:")
+    @Html.TextBox("sentence") <input type="submit" value="Submit" />
+}
+
+@if (Model != null && Model.Any()) {
+<div class="answer">
+<strong>Words in Reverse</strong>
+<ul>
+@foreach (string word in Model) {
+    <li>@word</li>
+}
+</ul>
+</div>
+}
+<p>What is the run time for this algorithm in O() notation?</p>
+
+<p>The algorithm notation would be <strong>O(N)</strong>, as speed of supplied processing is a single looping of parsed word from the sentence.</p>
