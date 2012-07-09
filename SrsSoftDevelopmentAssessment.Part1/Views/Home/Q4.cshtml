@@ -13,7 +13,7 @@
 
 @if (Model.HasValue) {
 <div class="answer">
-    @if (@Model > 0 && @Model <= 1000) {
+    @if (@Model > 0) {
     <span>The sum of all the multiples of 3 or 5 below your number is: </span><strong>@Model</strong>
     } else {
     <span>Please provide a number between 1 and 1000.</span>

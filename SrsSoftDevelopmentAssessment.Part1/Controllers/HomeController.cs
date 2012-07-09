@@ -42,7 +42,7 @@ namespace SrsSoftDevelopmentAssessment.Part1.Controllers
         {
             int num;
             if (!Int32.TryParse(number, out num) || num < 1 || num > 1000)
-                return View(num);
+                return View(0);
 
             int sum = 0;
             for (int i = 1; i < num; i++)

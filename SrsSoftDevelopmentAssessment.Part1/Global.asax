@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="SrsSoftDevelopmentAssessment.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="SrsSoftDevelopmentAssessment.Part1.MvcApplication" Language="C#" %>
